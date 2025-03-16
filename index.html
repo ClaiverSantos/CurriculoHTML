@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo *Name*</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>*Full Name*</h1>
+        <div class="perfil-imagem-container">
+            <img src="img/foto-perfil.jpg" alt="Foto de Perfil" class="perfil-imagem">
+        </div>
+    </header>
+    
+    <section id="sobre-mim">
+        <h2>About me</h2>
+        <div class="card">
+            <p>*About me*</p>
+            <button class="ver-detalhes">See More</button>
+    
+            <!-- Modal (Pop-up) -->
+            <div class="modal oculto">
+                <div class="modal-conteudo">
+                    <span class="fechar">&times;</span>
+                    <h2>More about me...</h2>
+                    <p>*More about me*</p>
+                    <img src="img/detalhes-imagem1.jpg" alt="Imagem Extra 1" class="imagem-modal">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia">
+        <h2>Professional Experience</h2>
+        
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="img/logo-empresa1.jpg" alt="Logo Empresa 1" class="imagem-card">
+            <p><strong>Company 1</strong></p>
+            <p><strong>Position at the company</strong></p>
+            <p>More about the work</p>
+            <button class="ver-detalhes">See More</button>
+            <!-- Modal para o primeiro card -->
+            <div class="modal oculto">
+                <div class="modal-conteudo">
+                    <span class="fechar">&times;</span>
+                    <h2>Company 2</h2>
+                    <p>More about the work</p>
+                    <img src="img/detalhes-imagem2.jpg" alt="Imagem Extra Empresa 1" class="imagem-modal">
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="img/logo-empresa2.jpg" alt="Logo Empresa 2" class="imagem-card">
+            <p><strong>Company 2</strong></p>
+            <p><strong>Position at the company</strong></p>
+            <p>More about the work</p>
+            <button class="ver-detalhes">See More</button>
+            <!-- Modal para o segundo card -->
+            <div class="modal oculto">
+                <div class="modal-conteudo">
+                    <span class="fechar">&times;</span>
+                    <h2>Company 2</h2>
+                    <p>More about the work</p>
+                    <img src="img/detalhes-imagem3.jpg" alt="Imagem Extra Empresa 2" class="imagem-modal">
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="img/logo-empresa3.jpg" alt="Logo Empresa 3" class="imagem-card">
+            <p><strong>Company 3</strong></p>
+            <p><strong>Position at the company</strong></p>
+            <p>More about the work</p>
+            <button class="ver-detalhes">See More</button>
+            <!-- Modal para o terceiro card -->
+            <div class="modal oculto">
+                <div class="modal-conteudo">
+                    <span class="fechar">&times;</span>
+                    <h2>Company 3</h2>
+                    <p>More about the work</p>
+                    <img src="img/detalhes-imagem4.jpg" alt="Imagem Extra Empresa 3" class="imagem-modal">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formacao-academica">
+        <h2>Education</h2>
+        <p><strong>Degree 1</strong> - Period</p>
+        <p><strong>Degree 2</strong> - Period</p>
+        <p><strong>Degree 3</strong> - Period</p>
+    </section>
+
+    <section id="habilidades">
+        <h2>Skills</h2>
+        <div class="habilidade">
+            <p>Skill 1</p>
+            <div class="barra"><div class="progresso" style="width: 90%;"></div></div>
+        </div>
+        <div class="habilidade">
+            <p>Skill 2</p>
+            <div class="barra"><div class="progresso" style="width: 85%;"></div></div>
+        </div>
+        <div class="habilidade">
+            <p>Skill 3</p>
+            <div class="barra"><div class="progresso" style="width: 85%;"></div></div>
+        </div>
+        <div class="habilidade">
+            <p>Skill 4</p>
+            <div class="barra"><div class="progresso" style="width: 80%;"></div></div>
+        </div>
+        <div class="habilidade">
+            <p>Skill 5</p>
+            <div class="barra"><div class="progresso" style="width: 60%;"></div></div>
+        </div>
+    </section>
+
+    <div class="icones">
+        <a href="#" class="linkedin" data-modal="modal-linkedin">
+            <img src="img/logo-linkedin.png" alt="LinkedIn">LinkedIn
+        </a>
+        <a href="#" class="github" data-modal="modal-github">
+            <img src="img/logo-github.png" alt="GitHub">GitHub
+        </a>
+        <a href="#" class="email" data-modal="modal-email">
+            <img src="img/logo-email.png" alt="Email">Email
+        </a>
+    </div>
+    
+    <!-- Modal LinkedIn -->
+    <div id="modal-linkedin" class="modal oculto">
+        <div class="modal-conteudo">
+            <span class="fechar">&times;</span>
+            <h2>My LinkedIn</h2>
+            <p>Check out my professional LinkedIn profile.</p>
+            <img src="img/perfil-linkedin.png" alt="perfil linkedin" class="perfil-modal">
+            <a href="https://www.linkedin.com/in/claiver-santos-17725b271/" target="_blank">Visit LinkedIn</a>
+        </div>
+    </div>
+    
+    <!-- Modal GitHub -->
+    <div id="modal-github" class="modal oculto">
+        <div class="modal-conteudo">
+            <span class="fechar">&times;</span>
+            <h2>My GitHub</h2>
+            <p>See my projects on GitHub.</p>
+            <img src="img/perfil-github.png" alt="perfil github" class="perfil-modal">
+            <a href="https://github.com/ClaiverSantos" target="_blank">Visit GitHub</a>
+        </div>
+    </div>
+    
+    <!-- Modal Email -->
+    <div id="modal-email" class="modal oculto">
+        <div class="modal-conteudo">
+            <span class="fechar">&times;</span>
+            <h2>Contact by Email</h2>
+            <p>Please email me to contact me.</p>
+            <img src="img/perfil-email.png" alt="perfil linkedin" class="perfil-modal">
+            <a href="mailto:youremail@example.com">Send Email</a>
+        </div>
+    </div>
+    
+
+
+    <section id="qr-code">
+        <h2>Download my resume!</h2>
+        <img src="img/qr-curriculo.png" alt="QR Code curriculo">
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
